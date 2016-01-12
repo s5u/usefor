@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UseforTableViewCell" rowHeight="83" id="KGk-i7-Jjw" customClass="UseforTableViewCell" customModule="usefor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usefor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syh-cd-MGY">
+                        <rect key="frame" x="29" y="15" width="103" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="103" id="C1d-py-lEE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-Dl-sUV">
+                        <rect key="frame" x="248" y="30" width="70" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="iFX-ch-ebb"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Price">
+                                <attributes>
+                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <font key="NSFont" size="22" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWD-Ed-bgh">
+                        <rect key="frame" x="29" y="53" width="72" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="YBx-Cm-fDR"/>
+                            <constraint firstAttribute="width" constant="72" id="eXx-yP-EIH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Syh-cd-MGY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="21" id="2UL-4w-Zpd"/>
+                    <constraint firstItem="Syh-cd-MGY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="CEX-BC-Ed8"/>
+                    <constraint firstItem="TL3-Dl-sUV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dl4-bE-ohh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nWD-Ed-bgh" secondAttribute="bottom" constant="0.5" id="EKz-HM-2rh"/>
+                    <constraint firstItem="nWD-Ed-bgh" firstAttribute="leading" secondItem="Syh-cd-MGY" secondAttribute="leading" id="YYN-RS-wLm"/>
+                    <constraint firstItem="TL3-Dl-sUV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="hFo-r9-KFR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TL3-Dl-sUV" secondAttribute="trailing" constant="26" id="ryD-KI-gPU"/>
+                    <constraint firstItem="nWD-Ed-bgh" firstAttribute="top" secondItem="Syh-cd-MGY" secondAttribute="bottom" constant="13" id="voo-ky-OZV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateField" destination="nWD-Ed-bgh" id="EnW-Lf-0NQ"/>
+                <outlet property="priceField" destination="TL3-Dl-sUV" id="e8Z-Qv-5Oi"/>
+                <outlet property="useforField" destination="Syh-cd-MGY" id="dWL-nU-zfo"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="361.5"/>
+        </tableViewCell>
+    </objects>
+</document>
